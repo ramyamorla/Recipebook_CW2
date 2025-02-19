@@ -11,14 +11,14 @@ class RecipeBookApp extends StatefulWidget {
 
 class _RecipeBookAppState extends State<RecipeBookApp> {
   List<Map<String, dynamic>> recipes = [
-    {'name': 'Pasta', 'ingredients': 'Noodles, Sauce', 'instructions': 'Boil noodles and add sauce.', 'isFavorite': false},
-    {'name': 'Pizza', 'ingredients': 'Dough, Cheese, Sauce', 'instructions': 'Bake dough with toppings.', 'isFavorite': false},
-    {'name': 'Salad', 'ingredients': 'Lettuce, Tomatoes, Cucumber', 'instructions': 'Mix all ingredients.', 'isFavorite': false},
-    {'name': 'Burger', 'ingredients': 'Bun, Patty, Lettuce, Tomato', 'instructions': 'Grill patty and assemble.', 'isFavorite': false},
-    {'name': 'Tacos', 'ingredients': 'Tortilla, Beef, Cheese, Salsa', 'instructions': 'Cook beef and fill tortillas.', 'isFavorite': false},
-    {'name': 'Sushi', 'ingredients': 'Rice, Fish, Seaweed', 'instructions': 'Roll ingredients in seaweed.', 'isFavorite': false},
-    {'name': 'Chocolate Cake', 'ingredients': 'Flour, Cocoa, Sugar, Eggs', 'instructions': 'Mix ingredients and bake.', 'isFavorite': false},
-    {'name': 'Pancakes', 'ingredients': 'Flour, Milk, Eggs, Syrup', 'instructions': 'Mix and cook on skillet.', 'isFavorite': false},
+    {'name': 'Pasta', 'ingredients': 'Noodles, Sauce, Olive Oil, Garlic, Basil', 'instructions': 'Boil noodles in salted water, sauté garlic in olive oil, add sauce and basil. Toss noodles and sauce together.', 'isFavorite': false},
+    {'name': 'Pizza', 'ingredients': 'Dough, Cheese, Sauce, Pepperoni, Mushrooms, Olives', 'instructions': 'Prepare dough, spread sauce, add cheese and toppings, bake at 400°F for 15 minutes or until golden.', 'isFavorite': false},
+    {'name': 'Salad', 'ingredients': 'Lettuce, Tomatoes, Cucumber, Carrots, Olive Oil, Lemon Juice', 'instructions': 'Chop vegetables, mix with olive oil and lemon juice. Add salt and pepper to taste.', 'isFavorite': false},
+    {'name': 'Burger', 'ingredients': 'Bun, Patty, Lettuce, Tomato, Cheese, Ketchup, Mustard', 'instructions': 'Grill patty, toast buns, assemble with lettuce, tomato, cheese, and condiments.', 'isFavorite': false},
+    {'name': 'Tacos', 'ingredients': 'Tortilla, Beef, Cheese, Salsa, Sour Cream, Lettuce', 'instructions': 'Cook beef with seasoning, warm tortillas, fill with beef, cheese, salsa, and sour cream.', 'isFavorite': false},
+    {'name': 'Sushi', 'ingredients': 'Rice, Fish (Salmon, Tuna), Seaweed, Vinegar, Soy Sauce, Wasabi', 'instructions': 'Cook rice and mix with vinegar. Roll rice with fish and seaweed, cut into pieces. Serve with soy sauce and wasabi.', 'isFavorite': false},
+    {'name': 'Chocolate Cake', 'ingredients': 'Flour, Cocoa, Sugar, Eggs, Butter, Baking Powder, Milk', 'instructions': 'Mix dry ingredients, add wet ingredients, bake at 350°F for 25 minutes. Let cool and frost with chocolate ganache.', 'isFavorite': false},
+    {'name': 'Pancakes', 'ingredients': 'Flour, Milk, Eggs, Syrup, Butter, Baking Powder', 'instructions': 'Mix wet and dry ingredients, cook on skillet until golden, serve with syrup and butter.', 'isFavorite': false},
   ];
 
   void toggleFavorite(String name) {
@@ -124,9 +124,7 @@ class DetailsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text('🍲 ${recipe['name']}')),
       body: Container(
-        decoration: BoxDecoration(
-          
-        ),
+        decoration: BoxDecoration(),
         child: Padding(
           padding: EdgeInsets.all(16.0),
           child: Column(
